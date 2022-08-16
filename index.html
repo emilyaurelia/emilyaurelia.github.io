@@ -2,6 +2,21 @@
 <table border="1"><form>
   <tr>
     <td>Name:</td>
-    <td><input type="text" name="name"/></td>
+    <td colspan="3"><input type="text" name="name"/></td>
+  </tr>
+  <tr>
+    <td>Relationship Status:</td>
+    <td><input type="radio" name="rs" value="single"/>Single</td>
+    <td><input type="radio" name="rs" value="taken"/>Taken</td>
+    <td><input type="radio" name="rs" value="complicated"/>Complicated</td>
+  </tr>
+  <tr>
+    <td>Favourite Fruits:</td>
+    <td><input type="checkbox" name="fruits[]" value="apple"/>Apple</td>
+    <td><input type="checkbox" name="fruits[]" value="banana"/>Banana</td>
+    <td><input type="checkbox" name="fruits[]" value="grape"/>Grape</td>
+  </tr>
+  <tr>
+    <td colspan="4"><input type="submit"></td>
   </tr>
   </form></table>
