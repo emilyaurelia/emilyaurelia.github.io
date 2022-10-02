@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Prata');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    font-family: 'Lora';
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    position: relative;
+    background-color: white;
+    width: 100vw;
+}
+
+.logo{
+    cursor: pointer;
+    width: 60px;
+    height:60px;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #005C53;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(169, 217, 208, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(2, 115, 115, 0.5);
+}
+
+body{
+    height: 1000vh;
+}
+#intro-pic{
+    width: 100%;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("EmilyA2.jpg");
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Emily{
+    font-family: 'Playfair Display';
+    font-size: 50pt;
+}
+
+.leftside, .rightside{
+    height: 80px;
+    width: 100%;
+
+}
+
+.leftside{
+    background: #D8FFDB;
+    font-family: 'Lora';
+    text-align: center;
+}
+
+.rightside{
+    background: #C4EEF2;
+    font-family: 'Lora';
+    text-align: center;
+}
+
+.col{
+    margin: 30px 0px;
+}
+
+.navbar-custom {
+    background-color: white;
+}
+
+#about{
+    margin-bottom: 50px;
+}
+
+#about_content{
+    background-color: aliceblue;
+    padding: 30px;
+}
+
+#about_content h1{
+    font-family: 'Lora';
+}
+
+#about_content p{
+    font-family: 'Source Serif Pro';
+    text-align: justify;
+}
+.card{
+    margin-top: 15px;
+}
+
+.btn-primary{
+    background-color: red;
+    border-color: red;
+}
+
+.btn-primary:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default{
+    background-color: pink;
+    border-color: pink;
+}
+
+.card-title{
+    font-family: 'Lora';
+    font-weight: bold;
+}
+
+.card-text{
+    font-family: 'Lato';
+}
+
+#portfolio_content h1{
+    font-family: 'Lora';
+}
+
+#portfolio_content p{
+    font-family: 'Source Serif Pro';
+    text-align: justify;
+}
+
+#portfolio_content{
+    background-color: #EFF7DC;
+    padding: 20px;
+}
+
+#portfolio{
+    margin-bottom: 50px;
+}
+
+#contact_details h1{
+    font-family: 'Lora';
+}
+
+#contact_details p{
+    font-family: 'Source Serif Pro';
+    text-align: justify;
+}
+
+#contact_details{
+    background-color: #FFE4BF;
+    padding: 30px;
+}
+
+#contact{
+    margin-bottom: 50px;
+}
+
+#profpic{
+    margin-top: 15px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#travel{
+    margin-bottom: 50px;
+}
+
+#travel_content h1{
+    font-family: 'Lora';
+}
+
+#travel_content p{
+    font-family: 'Source Serif Pro';
+    text-align: justify;
+}
+
+#travel_content{
+    background-color: #CFE8E4;
+    padding: 30px;
+}
+
+#travelcarousel{
+    margin-top: 25px;
+}
+
+.clock {
+    color: #EFF7DC;
+    background-color: #005C53;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 18px;
+    font-family: 'Lato';
+    letter-spacing: 7px;
+    padding: 0px 10px;
+    border-radius: 3px;
+}
