@@ -14,11 +14,9 @@
     <div class="container">
       <a href="{{ '/' | relative_url }}" class="site-title">{{ site.author.name }}</a>
       <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        {% if site.author.github %}
-        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
-        {% endif %}
+        <a href="{{ '/' | relative_url }}#about">About</a>
+        <a href="{{ '/' | relative_url }}#research">Research</a>
+        <a href="{{ '/photos' | relative_url }}">Photos</a>
       </nav>
     </div>
   </header>

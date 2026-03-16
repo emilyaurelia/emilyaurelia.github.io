@@ -1,0 +1,32 @@
+---
+layout: default
+title: Photos
+description: Photos from events by Emily Aurelia.
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Photos</h1>
+    <p class="page-subtitle">Moments captured at events.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% for event in site.data.photos %}
+    <div class="photo-event">
+      <div class="photo-event-header">
+        <h2 class="photo-event-name">{{ event.event }}</h2>
+        {% if event.date %}<span class="photo-event-date">{{ event.date }}</span>{% endif %}
+      </div>
+      <div class="photo-grid">
+        {% for photo in event.photos %}
+        <div class="photo-item">
+          <img class="photo-thumb" src="{{ photo.url }}" alt="{{ event.event }}" loading="lazy" />
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,50 @@
+---
+layout: default
+title: Research
+description: Research papers and publications by Emily Aurelia.
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Research</h1>
+    <p class="page-subtitle">Publications, papers, and academic work.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="papers-list">
+      {% for paper in site.data.papers %}
+      <div class="paper-card">
+        <div class="paper-meta">
+          <span class="paper-year">{{ paper.year }}</span>
+          <span class="paper-venue">{{ paper.venue }}</span>
+        </div>
+        <h3 class="paper-title">
+          {% if paper.url and paper.url != "" %}
+          <a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
+          {% else %}
+          {{ paper.title }}
+          {% endif %}
+        </h3>
+        <p class="paper-authors">{{ paper.authors }}</p>
+        {% if paper.abstract %}
+        <p class="paper-abstract">{{ paper.abstract }}</p>
+        {% endif %}
+        <div class="paper-footer">
+          {% if paper.tags %}
+          <div class="tags">
+            {% for tag in paper.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+          {% if paper.url and paper.url != "" %}
+          <a href="{{ paper.url }}" target="_blank" rel="noopener" class="paper-link">Read paper →</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
