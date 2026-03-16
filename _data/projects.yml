@@ -1,0 +1,19 @@
+- name: Project One
+  description: A short description of what this project does and why it's interesting.
+  url: https://github.com/emilyaurelia/project-one
+  tags: [Python, Data]
+
+- name: Project Two
+  description: Another project — what problem it solves and what you built.
+  url: https://github.com/emilyaurelia/project-two
+  tags: [JavaScript, Web]
+
+- name: Project Three
+  description: Brief description of this project and the tech stack you used.
+  url: https://github.com/emilyaurelia/project-three
+  tags: [ML, Research]
+
+- name: Project Four
+  description: What makes this project unique and what you learned from building it.
+  url: ""
+  tags: [Design, UX]

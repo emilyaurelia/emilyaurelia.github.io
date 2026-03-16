@@ -1,0 +1,64 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="container">
+    <p class="greeting">Hi, I'm</p>
+    <h1>Emily Aurelia</h1>
+    <p class="tagline">
+      <!-- Edit this: your role, field, or one-liner about yourself -->
+      Student · Builder · Curious about everything.
+    </p>
+    <div class="hero-links">
+      <a href="#about" class="btn">About me</a>
+      <a href="#projects" class="btn btn-outline">See my work</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>About</h2>
+    <div class="about-content">
+      <p>
+        <!-- Edit this: introduce yourself in a few sentences -->
+        I'm a [your role/field] based in [your location]. I'm interested in
+        [your interests], and I spend my time [what you do / are working on].
+      </p>
+      <p>
+        When I'm not [working/coding/studying], I enjoy [hobbies or interests].
+        Feel free to reach out — I'm always happy to connect.
+      </p>
+      {% if site.author.email %}
+      <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
+    <p class="section-subtitle">A selection of things I've built.</p>
+    <div class="project-grid">
+      {% for project in site.data.projects %}
+      <div class="project-card">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        {% if project.tags %}
+        <div class="tags">
+          {% for tag in project.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if project.url and project.url != "" %}
+        <a href="{{ project.url }}" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

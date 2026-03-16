@@ -1,0 +1,24 @@
+title: Emily Aurelia
+description: Personal portfolio and about page.
+url: "https://emilyaurelia.github.io"
+baseurl: ""
+
+author:
+  name: Emily Aurelia
+  github: emilyaurelia
+  # email: you@example.com
+  # linkedin: yourhandle
+  # twitter: yourhandle
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .bundle/
+  - vendor/
