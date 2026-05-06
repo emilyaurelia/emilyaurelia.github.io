@@ -1,0 +1,23 @@
+# ─── Announcements ────────────────────────────────────────────────────────────
+# Add entries below. Fields:
+#   date:       Display date, e.g. "May 2026" or "6 May 2026"
+#   type:       Label shown as a badge, e.g. "Event", "Paper", "News", "Travel"
+#   text:       The announcement text
+#   link:       (optional) URL for a "Learn more" link
+#   link_label: (optional) Custom label for the link, defaults to "Learn more →"
+
+# - date: "May 2026"
+#   type: "News"
+#   text: "Currently working on my PhD thesis on AI-assisted learning tools for higher education."
+
+- date: "Jun 2026"
+  type: "Event"
+  text: "Attending DIS 2026 in NUS, Singapore. Come say hi if you're there!"
+  link: "https://dis.acm.org/2026/"
+  link_label: "DIS 2026 website →"
+
+# - date: "Jul 2026"
+#   type: "Travel"
+#   text: "Will be visiting collaborators at NUS for a two-week research exchange."
+
+

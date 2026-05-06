@@ -6,46 +6,64 @@ title: Home
 <section class="hero">
   <div class="container">
     <div class="hero-inner">
-      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Emily Aurelia" class="profile-pic" />
+      <div class="profile-pic-wrap">
+        <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Emily Aurelia" class="profile-pic" />
+      </div>
       <div class="hero-text">
-        <p class="greeting">Hi, I'm</p>
-        <h1>Emily Aurelia</h1>
+        <div class="hero-intro">
+          <h1 class="greeting">Hi, I'm</h1>
+          <img src="{{ '/assets/images/Emily Aurelia.png' | relative_url }}" alt="Emily Aurelia" class="hero-name-logo" />
+        </div>
         <p class="tagline">
           <!-- Edit this: your role, field, or one-liner about yourself -->
           PhD CS Student · HCI Researcher · Photographer ·
         </p>
+        <div class="hero-divider"></div>
+        <div class="hero-about">
+          <!-- Edit this: introduce yourself in a few sentences -->
+          <p>I'm a PhD CS Student in Singapore Management University. I'm interested in AI and its application in Education.</p>
+          <p>When I'm not studying, I enjoy taking pictures and traveling. Feel free to reach out — I'm always happy to connect.</p>
+          {% if site.author.email %}
+          <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+          {% endif %}
+        </div>
         <div class="hero-links">
-          <a href="#about" class="btn">About me</a>
-          <a href="#research" class="btn btn-outline">My research</a>
+          <a href="#announcements" class="btn">Announcements</a>
+          <a href="#research" class="btn btn-outline">Works</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="about" class="section">
+<section id="announcements" class="section">
   <div class="container">
-    <h2>About</h2>
-    <div class="about-content">
-      <p>
-        <!-- Edit this: introduce yourself in a few sentences -->
-        I'm a PhD CS Student in Singapore Management University. I'm interested in
-        AI and its application in Education.
-      </p>
-      <p>
-        When I'm not studying, I enjoy taking pictures and traveling.
-        Feel free to reach out — I'm always happy to connect.
-      </p>
-      {% if site.author.email %}
-      <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
-      {% endif %}
+    <h2>Announcements</h2>
+    <p class="section-subtitle">What I'm currently up to and upcoming events.</p>
+    <div class="timeline">
+      {% for item in site.data.announcements %}
+      <div class="timeline-item">
+        <div class="timeline-track">
+          <span class="timeline-dot"></span>
+          <span class="timeline-line"></span>
+        </div>
+        <div class="timeline-content">
+          <div class="announcement-header">
+            <span class="announcement-date">{{ item.date }}</span>
+            {% if item.type %}<span class="announcement-type">{{ item.type }}</span>{% endif %}
+          </div>
+          <p class="announcement-text">{{ item.text }}</p>
+          {% if item.link %}<a href="{{ item.link }}" class="announcement-link" target="_blank" rel="noopener">{{ item.link_label | default: "Learn more →" }}</a>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
 <section id="research" class="section">
   <div class="container">
-    <h2>Research</h2>
+    <h2>Works</h2>
     <p class="section-subtitle">Publications and academic work.</p>
     <div class="papers-list">
       {% for paper in site.data.papers %}

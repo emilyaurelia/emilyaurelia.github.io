@@ -12,11 +12,12 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.author.name }}</a>
+      <a href="{{ '/' | relative_url }}" class="site-title">
+        <img src="{{ '/assets/images/Emily Aurelia.png' | relative_url }}" alt="{{ site.author.name }}" class="site-logo" />
+      </a>
       <nav>
-        <a href="{{ '/' | relative_url }}#about">About</a>
-        <a href="{{ '/' | relative_url }}#research">Research</a>
-        <a href="{{ '/photos' | relative_url }}">Photos</a>
+        <a href="{{ '/' | relative_url }}#announcements">Announcements</a>
+        <a href="{{ '/' | relative_url }}#research">Works</a>
       </nav>
     </div>
   </header>
