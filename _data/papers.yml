@@ -1,9 +1,17 @@
+- title: "“Alexa, Do Not Say That in Front of my Boss!” A Cross-Cultural Comparison of User and AI Preferences for Privacy-Aware Smart Speaker Interactions Across Contexts"
+  authors: "Lynne Warin, Anthony Tang, <u>Emily Aurelia</u>, Archan Misra, Delphine Reinhardt"
+  venue: "PoPETs 2026"
+  year: 2026
+  # abstract: "A short abstract or summary of what this paper is about and its key contributions."
+  url: ""
+  tags: []
+
 - title: "Instructors' Strategies in Creating and Implementing Constructivist LLM-Based Learning Activities"
   authors: "<u>Emily Aurelia</u>, Yeo ShunYi, Michelle Lui, Effie Lai-Chong Law, Anthony Tang"
   venue: "ICHEC 2025 (Poster)"
   year: 2025
   # abstract: "A short abstract or summary of what this paper is about and its key contributions."
-  url: ""
+  url: "https://dl.acm.org/doi/10.1145/3786995.3787043"
   tags: []
 
 - title: "Prompting an Embodied AI Agent: How Embodiment and Multimodal Signaling Affects Prompting Behaviour"
